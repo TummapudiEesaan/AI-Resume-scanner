@@ -1,0 +1,77 @@
+PROJECT TITLE:
+AI Resume Screening System
+
+TECHNOLOGY STACK:
+Python, Natural Language Processing (NLP), Machine Learning
+
+LIBRARIES USED:
+pandas
+scikit-learn
+nltk or spaCy
+PyPDF2 or pdfminer
+
+ALGORITHM EXPLANATION
+
+Step 1: Start the program execution.
+
+Step 2: Import required Python libraries.
+        - Import pandas for data handling.
+        - Import scikit-learn for machine learning utilities.
+        - Import nltk or spaCy for natural language processing.
+        - Import PyPDF2 or pdfminer for extracting text from PDF resumes.
+        - Import os library for file handling.
+
+Step 3: Load job description.
+        - Open the file "job_description.txt".
+        - Read the text content.
+        - Store it in a variable called job_description_text.
+
+Step 4: Load resumes.
+        - Access the "resumes" folder.
+        - Retrieve the list of resume files available in the directory.
+
+Step 5: Extract text from resumes.
+        - For each resume file:
+            a) Open the PDF file.
+            b) Extract text from each page.
+            c) Combine all pages into one string.
+            d) Store the extracted resume text.
+
+Step 6: Store resume texts.
+        - Create a list to store all extracted resume contents.
+
+Step 7: Perform text preprocessing.
+        - Convert text to lowercase.
+        - Remove punctuation marks.
+        - Remove stop words.
+        - Perform tokenization.
+        - Clean unnecessary characters.
+
+Step 8: Combine job description and resumes.
+        - Create a list containing:
+            • Job description
+            • All resume texts
+
+Step 9: Convert text to numerical vectors.
+        - Apply TF-IDF vectorization.
+        - Transform text documents into numerical feature vectors.
+
+Step 10: Separate vectors.
+         - Extract vector for job description.
+         - Extract vectors for resumes.
+
+Step 11: Calculate similarity scores.
+         - Apply cosine similarity.
+         - Compare job description vector with each resume vector.
+
+Step 12: Generate similarity score.
+         - Compute similarity value for each resume.
+
+Step 13: Rank resumes.
+         - Sort resumes in descending order of similarity scores.
+
+Step 14: Display results.
+         - Print ranked list of resumes.
+         - Display match percentage for each candidate.
+
+Step 15: End program execution.

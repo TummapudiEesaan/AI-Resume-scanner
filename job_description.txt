@@ -1,0 +1,19 @@
+Job Title: Python Developer
+
+We are looking for an experienced Python Developer with strong skills in machine learning, data analysis, and natural language processing.
+
+Requirements:
+- Proficiency in Python programming
+- Experience with machine learning frameworks such as scikit-learn, TensorFlow, or PyTorch
+- Strong knowledge of data analysis using pandas and NumPy
+- Experience with SQL databases and data querying
+- Familiarity with NLP techniques and text processing
+- Knowledge of REST APIs and web frameworks like Flask or Django
+- Experience with version control systems (Git)
+- Strong problem-solving and analytical skills
+
+Preferred Qualifications:
+- Experience with deep learning models
+- Knowledge of cloud platforms (AWS, GCP, or Azure)
+- Experience with data visualization tools like Matplotlib or Seaborn
+- Understanding of software development best practices

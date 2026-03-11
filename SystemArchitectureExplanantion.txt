@@ -1,0 +1,137 @@
+SYSTEM ARCHITECTURE EXPLANATION
+AI Resume Screening System
+
+INTRODUCTION
+
+The AI Resume Screening System follows a modular architecture that processes resumes, extracts information, analyzes textual similarity, and ranks candidates automatically.
+
+The system consists of multiple interconnected modules.
+
+SYSTEM COMPONENTS
+
+1. Input Module
+2. Resume Parsing Module
+3. Text Preprocessing Module
+4. Feature Extraction Module
+5. Similarity Calculation Module
+6. Ranking Module
+7. Output Module
+
+------------------------------------------------
+
+1. INPUT MODULE
+
+This module collects input data required for the system.
+
+Inputs include:
+
+• Job description file
+• Multiple resume files
+
+These files are stored within the project directory.
+
+------------------------------------------------
+
+2. RESUME PARSING MODULE
+
+This module extracts textual content from resume files.
+
+Operations performed:
+
+• Open PDF resumes
+• Extract text from pages
+• Convert content into readable format
+
+------------------------------------------------
+
+3. TEXT PREPROCESSING MODULE
+
+The extracted text is cleaned and normalized.
+
+Tasks performed:
+
+• Convert text to lowercase
+• Remove punctuation
+• Remove stop words
+• Tokenize words
+
+------------------------------------------------
+
+4. FEATURE EXTRACTION MODULE
+
+The cleaned text is transformed into numerical features using TF-IDF vectorization.
+
+This step converts textual documents into mathematical vectors.
+
+------------------------------------------------
+
+5. SIMILARITY CALCULATION MODULE
+
+This module compares resumes with the job description.
+
+Technique used:
+
+Cosine Similarity
+
+Cosine similarity measures the similarity between two text vectors.
+
+------------------------------------------------
+
+6. RANKING MODULE
+
+The system sorts candidates based on similarity scores.
+
+Higher score indicates stronger match.
+
+------------------------------------------------
+
+7. OUTPUT MODULE
+
+The final output displays ranked candidates.
+
+Output example:
+
+Candidate Ranking
+
+1. resume2.pdf – 88%
+2. resume1.pdf – 74%
+3. resume3.pdf – 63%
+
+------------------------------------------------
+
+DATA FLOW
+
+Job Description + Resume Files
+        ↓
+Resume Parsing
+        ↓
+Text Preprocessing
+        ↓
+Feature Extraction (TF-IDF)
+        ↓
+Similarity Calculation
+        ↓
+Candidate Ranking
+        ↓
+Output Display
+
+------------------------------------------------
+
+SYSTEM REQUIREMENTS
+
+Hardware Requirements
+
+• Standard computer
+• Minimum 4GB RAM
+
+Software Requirements
+
+• Python 3.8+
+• NLP libraries
+• Machine learning libraries
+
+------------------------------------------------
+
+CONCLUSION
+
+The architecture of the AI Resume Screening System ensures efficient processing of resume data and automated ranking of candidates. The modular structure allows easy extension of the system for future improvements such as advanced AI models and web interfaces.

@@ -1,0 +1,124 @@
+IMPLEMENTATION ROADMAP
+AI Resume Screening System
+
+Phase 1: Environment Setup
+
+Step 1: Install Python
+        Install Python version 3.8 or higher.
+
+Step 2: Install required libraries
+
+        pip install pandas
+        pip install scikit-learn
+        pip install nltk
+        pip install PyPDF2
+
+Step 3: Verify installation by importing libraries in Python.
+
+--------------------------------------------------
+
+Phase 2: Project Structure Setup
+
+Create the project directory.
+
+AI_Resume_Screener
+│
+├── resumes
+│   ├── resume1.pdf
+│   ├── resume2.pdf
+│   ├── resume3.pdf
+│
+├── job_description.txt
+├── resume_parser.py
+├── similarity_engine.py
+├── main.py
+│
+├── AlgorithmExplanation.txt
+├── ProjectDescription.txt
+├── ImplementationRoadmap.txt
+└── SystemArchitectureExplanation.txt
+
+--------------------------------------------------
+
+Phase 3: Create Job Description File
+
+Step 1: Create a file named job_description.txt
+
+Step 2: Add sample job description text
+
+Example:
+Looking for a Python developer with experience in machine learning, data analysis, and SQL.
+
+--------------------------------------------------
+
+Phase 4: Implement Resume Parsing
+
+Step 1: Write code to open PDF resumes.
+
+Step 2: Extract text from PDF pages.
+
+Step 3: Store extracted text.
+
+--------------------------------------------------
+
+Phase 5: Implement Text Preprocessing
+
+Perform the following operations:
+
+• Convert text to lowercase
+• Remove punctuation
+• Remove stop words
+• Tokenize words
+• Clean text data
+
+--------------------------------------------------
+
+Phase 6: Implement Feature Extraction
+
+Step 1: Use TF-IDF vectorizer.
+
+Step 2: Convert text into numerical vectors.
+
+--------------------------------------------------
+
+Phase 7: Implement Similarity Calculation
+
+Step 1: Apply cosine similarity.
+
+Step 2: Compare resume vectors with job description vector.
+
+Step 3: Generate similarity scores.
+
+--------------------------------------------------
+
+Phase 8: Rank Candidates
+
+Step 1: Sort resumes based on similarity scores.
+
+Step 2: Generate ranking list.
+
+--------------------------------------------------
+
+Phase 9: Display Results
+
+Step 1: Print candidate ranking.
+
+Example:
+
+1. Resume2.pdf – 89%
+2. Resume1.pdf – 72%
+3. Resume3.pdf – 60%
+
+--------------------------------------------------
+
+Phase 10: Testing
+
+Test with multiple resumes and different job descriptions.
+
+Verify ranking accuracy.
+
+--------------------------------------------------
+
+Phase 11: Documentation
+
+Prepare all project documentation files.
